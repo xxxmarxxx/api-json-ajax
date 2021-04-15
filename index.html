@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,24 @@
   <title>Api pobieranie danych </title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <button>Pobierz dane</button>
-  
+  <form class="generator">
+    <label class="generator__input-name">wybierz plec
+      <select class="generator__select" name="gender">
+        <option value="both">Wszyscy</option>
+        <option value="female">Kobiety</option>
+        <option value="male">Mezczyzni</option>
+      </select>
+    </label>
+    <label class="generator__input-name">Liczba osob:
+      <input class="generator__input" name="users-number" type="number" value="10">
+    </label>
+    <input type="submit" class="button" value="Pobierz uzytkownikow">
+
+  </form>
+
   <script src="main.js"></script>
 </body>
+
 </html>
