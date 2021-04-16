@@ -23,15 +23,16 @@ const getUsers = (e) => {
 
 const showUsers = (users) => {
   const resultArea = document.querySelector('.user-list');
-  
-  // resultArea.textContent = '';
+  resultArea.textContent = '';
   users.forEach((user) => {
     const item = document.createElement("div");
     item.className = "user";
     item.innerHTML = `
-  <div class='user__name'>${user.name.title.toUpperCase()}${user.name.first.toUpperCase()}${user.name.last.toUpperCase()}
+  <div class='user__name'>${user.name.title.toUpperCase()} ${user.name.first.toUpperCase()} ${user.name.last.toUpperCase()}
   </div>
   <img class="user__image" src=${user.picture.medium}>
+  <div class='user__mail'>${user.email}<div>
+  <div class='user__location'>${user.location.state} | ${user.location.country}<div>
   `;
    resultArea.appendChild(item)
   });
