@@ -1,19 +1,79 @@
-body{
+body {
   font-size: 20px;
   font-family: 'Courier New', Courier, monospace;
   max-width: 1200px;
   margin: 50px auto;
 }
 
-input, select {
-  font-size: 20px;
+input,
+select {
+  font-size: 18px;
 }
-.user-list{
-  background-color: bisque;
+
+.button{
+  text-transform: uppercase;
+  color: rgb(135, 117, 69);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 0 0 rgba(0, 0, 0, 0.255);
+}
+
+.generator {
+  text-align: center;
+  background-color: rgba(147, 103, 50, 0.345);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.generator__input,.generator__select {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.user-list {
+  border-radius: 20px;
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-.user{
+
+.user {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
   flex-basis: 30%;
+  display: flex;
+  border-radius: 5px;
+  background-color: rgba(158, 198, 186, 0.351);
+  box-shadow: 1px 1px 5px rgba(54, 73, 65, 0.3) inset;
+  /* box-shadow: 1px 2px 5px 0.1px rgba(0, 0, 0, 0.495); */
+}
+
+.user__image {
+  height: 100px;
+  width: 100px;
+  margin: 20px auto;
+  order: -1;
+  border: 5px solid rgba(255, 255, 255, 0.461);
+  border-radius: 50%;
+}
+
+.user__name {
+  align-self: center;
+  padding: 10px;
+}
+
+.user__mail {
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.user__location {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
 }
